@@ -13,7 +13,6 @@ class Index extends \Magento\Framework\App\Action\Action {
         return parent::__construct($context);
     }
     public function execute() {
-        // render the page layout to display data
         $this->_pageFactory->create();
         $this->_view->loadLayout();
         $this->_view->renderLayout();

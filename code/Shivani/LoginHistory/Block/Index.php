@@ -24,7 +24,7 @@ class Index extends \Magento\Framework\View\Element\Template
         $customerSession = $objectManager->create("Magento\Customer\Model\Session");
         $id = $customerSession->getCustomerId();
         $post = $this->_postFactory->create();
-        // return data filter it by customer id to display it in the custom tab
+
         return $post->getCollection()
             ->addFieldToFilter('customer_id', $id);
     }

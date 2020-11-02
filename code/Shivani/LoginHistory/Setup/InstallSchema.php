@@ -15,7 +15,7 @@ class InstallSchema implements InstallSchemaInterface
      */
     public function install(SchemaSetupInterface $setup, ModuleContextInterface $context)
     {
-        //create table to store customer data log_id, customer_id, ip_address, user_agent and login_date
+
         $table = $setup->getConnection()
             ->newTable($setup->getTable('login_history'))
             ->addColumn(

@@ -4,8 +4,6 @@
         <referenceBlock name="customer_account_navigation">
             <block class="Magento\Customer\Block\Account\SortLinkInterface" name="customer-login-history-tab">
                 <arguments>
-                    // add a link into the account section
-                    // give that link "Login History" name
                     <argument name="path" xsi:type="string">history/customer/index</argument>
                     <argument name="label" xsi:type="string" translate="true">Login History</argument>
                 </arguments>
