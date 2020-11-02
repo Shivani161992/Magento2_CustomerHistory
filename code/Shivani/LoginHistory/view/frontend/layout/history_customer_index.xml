@@ -7,6 +7,7 @@
             </action>
         </referenceBlock>
         <referenceContainer name="content">
+            // set the block path for the template
             <block class="Shivani\LoginHistory\Block\Index" name="history" template="Shivani_LoginHistory::history.phtml">
             </block>
         </referenceContainer>

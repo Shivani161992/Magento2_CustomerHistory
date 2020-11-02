@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="customer_login">
+        // define observer
         <observer name="customer_login_observer" instance="Shivani\LoginHistory\Observer\CustomerLogin" />
     </event>
 </config>
