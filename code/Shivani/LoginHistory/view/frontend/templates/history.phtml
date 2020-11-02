@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @var \Shivani\LoginHistory\Block\Index $block
+ */
+
+?>
+<table>
+    <tr>
+        <th>IP Address</th>
+        <th>User Agent</th>
+        <th>Login Date/Time</th>
+    </tr>
+    <?php
+    foreach ($block->getPostCollection() as $key => $post) {
+        echo '<tr>
+                    <td>' . $post->getIpAddress() . '</td>
+                    <td>' . $post->getUserAgent() . '</td>
+                    <td>' . $post->getLoginDate() . '</td>
+                  </tr>';
+    }
+    ?>
+</table>
+
